@@ -22,9 +22,7 @@ import {ReactiveFormsModule, FormsModule} from '@angular/forms';
     IonicModule.forRoot(),
     AppRoutingModule,
     AngularFireModule.initializeApp(firebaseConfig),
-    AngularFirestoreModule,
-    FormsModule,
-    ReactiveFormsModule
+    AngularFirestoreModule
   ],
   providers: [
     StatusBar,

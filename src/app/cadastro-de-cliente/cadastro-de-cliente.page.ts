@@ -26,9 +26,11 @@ export class CadastroDeClientePage implements OnInit {
    }
 
   ngOnInit() {
+    
   }
 
   cadastrar(){
+    console.log('ok');
     let ref = this.firestore.collection('cliente')
     ref.add(this.formGroup.value)
       .then(() =>{

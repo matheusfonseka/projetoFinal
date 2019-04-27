@@ -2,24 +2,27 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
+
 import { IonicModule } from '@ionic/angular';
-import { CadastroDeClientePage } from './cadastro-de-cliente.page';
+
+import { ClienteViewPage } from './cliente-view.page';
 import { ReactiveFormsModule } from '@angular/forms';
 
 const routes: Routes = [
   {
     path: '',
-    component: CadastroDeClientePage
+    component: ClienteViewPage
   }
 ];
+
 @NgModule({
   imports: [
     CommonModule,
-    IonicModule,
     FormsModule,
+    IonicModule,
     ReactiveFormsModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [CadastroDeClientePage]
+  declarations: [ClienteViewPage]
 })
-export class CadastroDeClientePageModule {}
+export class ClienteViewPageModule {}

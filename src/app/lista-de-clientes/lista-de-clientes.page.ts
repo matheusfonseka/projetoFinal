@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Cliente } from '../model/cliente';
 import * as firebase from 'firebase';
-import { NavParams } from '@ionic/angular';
+import { NavParams, LoadingController } from '@ionic/angular';
 import { Router } from '@angular/router';
 import { ActivatedRoute } from '@angular/router';
 
@@ -10,18 +10,23 @@ import { ActivatedRoute } from '@angular/router';
   templateUrl: './lista-de-clientes.page.html',
   styleUrls: ['./lista-de-clientes.page.scss'],
 })
-export class ListaDeClientesPage implements OnInit {
+export class ListaDeClientesPage{
 
   listaDeClientes : Cliente[] = [];
   firestore = firebase.firestore();
   settings = {timestampsInSnapshots: true};
 
-  constructor(public  activatedRoute: ActivatedRoute) {
-    console.log(this.activatedRoute.snapshot.paramMap.get('id'));
+  constructor(public router : Router, public loadingController: LoadingController) {
+    
   }
 
   ngOnInit() {
     this.getList();
+  }
+
+  viewCliente(obj : Cliente){
+    this.router.navigate(['/cliente-view', { 'cliente': obj.id }]);
+    this.presentLoading();
   }
 
   getList() {
@@ -33,9 +38,31 @@ export class ListaDeClientesPage implements OnInit {
             c.id = doc.id;
             this.listaDeClientes.push(c);
         });
-        console.log(this.listaDeClientes);
     });
-
   }
 
+
+  remove(obj : Cliente){
+    var ref = firebase.firestore().collection("cliente");
+    ref.doc(obj.id).delete()
+      .then(()=>{
+        this.listaDeClientes = [];
+        this.getList();
+      }).catch(()=>{
+        console.log('Erro ao atualizar');
+      })
+  }
+
+
+  async presentLoading() {
+    const loading = await this.loadingController.create({
+      message: 'Hellooo',
+      duration: 2000
+    });
+    await loading.present();
+
+   
+  }
+
+  
 }
