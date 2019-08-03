@@ -36,7 +36,10 @@ export class AppComponent {
       title: 'Cadastro de Clientes',
       url: '/cadastro-de-cliente',
       icon: 'book'
-    }
+    },
+  
+ 
+   
   ];
 // 
   constructor(

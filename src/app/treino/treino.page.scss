@@ -1,0 +1,82 @@
+.volta{
+    width: 50px;
+    height: 30px;
+    color: black;
+  }
+ 
+  ion-title{
+      color: black;
+  }
+
+
+.cor{
+    color: white;
+  }
+
+  .color{
+    background-color: black;
+  }
+
+  .ins{
+    color: black;
+  }
+
+  .escolha{
+    width: 70px;
+    height: 70px;
+  }
+  .baixo{
+    margin-top: 60px;
+  }
+  .fundo{
+    margin-top: 2px;
+    --background: url(../../assets/imagens/corpo.jpg);  
+    
+  }
+  
+  .fundoA{
+    margin-top: 2px;
+    --background: url(../../assets/imagens/abdomen.jpg);  
+  }
+ 
+  .fundoB{
+    margin-top: 2px;
+    --background: url(../../assets/imagens/braco.jpg);  
+  }
+
+  .fundoP{
+    margin-top: 2px;
+    --background: url(../../assets/imagens/perna.jpg);  
+  }
+ 
+  .fundoG{
+    margin-top: 2px;
+    --background: url(../../assets/imagens/gluteos.jpg);  
+  }
+ 
+  ion-card-header{
+    height: 150px;
+  }
+
+  .mov{
+    margin-left: 50px;
+    font-family: Impact;
+    color: black;
+    font-size: 22px;
+  }
+
+  div.container4 {
+    height: 8em;
+    position: relative }
+div.container4 p {
+    margin: 0;
+    color: orangered;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-family: Impact;
+    font-size: 28px;
+  
+  }

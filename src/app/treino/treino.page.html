@@ -1,0 +1,87 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-buttons slot="end">
+      <ion-menu-button color="dark"></ion-menu-button>
+    </ion-buttons>
+    <ion-icon (click)="Home()" slot="start" name="contact" class="volta"></ion-icon>
+    <ion-title>Treino em Casa</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-tabs>
+    <ion-tab-bar slot="top">
+
+      <ion-card-header class="color">
+        <ion-tab-button>
+          <ion-label class="cor">DESAFIO</ion-label>
+        </ion-tab-button>
+      </ion-card-header>
+
+      <ion-tab-button (click)="Instrucoes()">
+        <ion-label class="ins">iNSTRUÇÕES</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button (click)="Ciencia()">
+        <ion-label class="ins">CIÊNCIA</ion-label>
+      </ion-tab-button>
+
+    </ion-tab-bar>
+
+  </ion-tabs>
+
+  <ion-card class="baixo" (click)="Imc()">
+    <ion-item>
+
+      <ion-icon name="speedometer" slot="start"></ion-icon>
+      <ion-label class="mov">Avalie seu IMC</ion-label>
+
+
+      <ion-icon name="stats" slor="end"></ion-icon>
+
+    </ion-item>
+  </ion-card>
+
+  <ion-card (click)="TreinoCorpoInteiro()">
+
+    <ion-card-header class="fundo">
+      <div class=container4>
+        <p>Treino de Corpo Inteiro</p>
+      </div>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-card (click)="AbdomensTreino()">
+    <ion-card-header class="fundoA">
+      <div class=container4>
+        <p>Abdomens Treino</p>
+      </div>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-card (click)="BracoTreino()">
+    <ion-card-header class="fundoB">
+      <div class=container4>
+        <p>Braço Treino</p>
+      </div>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-card (click)="PernaTreino()">
+    <ion-card-header class="fundoP">
+      <div class=container4>
+        <p>Perna Treino</p>
+      </div>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-card (click)="GluteosTreino()">
+    <ion-card-header class="fundoG">
+      <div class=container4>
+        <p>Gluteos Treino</p>
+      </div>
+    </ion-card-header>
+  </ion-card>
+
+</ion-content>

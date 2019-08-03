@@ -33,6 +33,18 @@ export class ListPage implements OnInit {
   }
 
   ngOnInit() {
+
+  }
+
+  Perfil() {
+    this.router.navigate(['/perfil']);
+  }
+
+  ListaDeNutricionistas(){
+    this.router.navigate(['/lista-de-nutricionistas'])
+  }
+  Treino(){
+    this.router.navigate(['/treino'])
   }
 
   cadastrar(){
