@@ -27,30 +27,31 @@
   }
   .baixo{
     margin-top: 60px;
+    --ion-background-color:rgb(59, 119, 230);
   }
   .fundo{
-    margin-top: 2px;
+    margin-top: 1px;
     --background: url(../../assets/imagens/corpo.jpg);  
     
   }
   
   .fundoA{
-    margin-top: 2px;
+    margin-top: 1px;
     --background: url(../../assets/imagens/abdomen.jpg);  
   }
  
   .fundoB{
-    margin-top: 2px;
+    margin-top: 1px;
     --background: url(../../assets/imagens/braco.jpg);  
   }
 
   .fundoP{
-    margin-top: 2px;
+    margin-top: 1px;
     --background: url(../../assets/imagens/perna.jpg);  
   }
  
   .fundoG{
-    margin-top: 2px;
+    margin-top: 1px;
     --background: url(../../assets/imagens/gluteos.jpg);  
   }
  
@@ -59,9 +60,9 @@
   }
 
   .mov{
-    margin-left: 50px;
+    margin-left: 45px;
     font-family: Impact;
-    color: black;
+    color: white;
     font-size: 22px;
   }
 
@@ -79,4 +80,10 @@ div.container4 p {
     font-family: Impact;
     font-size: 28px;
   
+  }
+
+  .nov{
+    color: white;
+    width: 50px;
+    height: 30px;
   }
