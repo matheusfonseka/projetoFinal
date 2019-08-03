@@ -27,7 +27,7 @@
   }
   .baixo{
     margin-top: 60px;
-    --ion-background-color:rgb(59, 119, 230);
+    --ion-background-color:rgb(160, 166, 179);
   }
   .fundo{
     margin-top: 1px;
@@ -60,8 +60,8 @@
   }
 
   .mov{
-    margin-left: 45px;
-    font-family: Impact;
+    margin-left: 30px;
+    font-family: Verdana;
     color: white;
     font-size: 22px;
   }
@@ -71,7 +71,8 @@
     position: relative }
 div.container4 p {
     margin: 0;
-    color: orangered;
+    background-color: black;
+    color: white;
     position: absolute;
     top: 50%;
     left: 50%;
