@@ -43,13 +43,17 @@
     </ion-item>
   </ion-card>
 
-  <ion-card (click)="TreinoCorpoInteiro()">
+  <ion-card class="preto" (click)="TreinoCorpoInteiro()">
 
     <ion-card-header class="fundo">
       <div class=container4>
         <p>Treino de Corpo Inteiro</p>
+       
       </div>
+     
     </ion-card-header>
+    <li slot="start" >27 dias restantes </li>
+      <ion-progress-bar value="0.1"></ion-progress-bar>
   </ion-card>
 
   <ion-card (click)="AbdomensTreino()">
