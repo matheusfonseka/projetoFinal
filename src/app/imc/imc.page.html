@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar>
       <ion-icon (click)="Treino()" slot="start" name="arrow-back" class="volta"></ion-icon>
-    <ion-title>Imc</ion-title>
+    <ion-title>IMC</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -9,25 +9,27 @@
 
   <ion-card>
     <ion-card-content>
-      <h1>
-        Para realizar o cálculo digite sua altura em metros (ex: 1,65), e o seu peso em Kg (ex: 65,750).
+      <h1 style="text-align: justify;">
+        Para calcular seu IMC, digite seu peso (kg) e sua altura (m).
       </h1>
     </ion-card-content>
   </ion-card>
   <ion-list>
 
+    
+    
     <ion-item>
       <ion-label floating>
-        Digite sua altura
-      </ion-label>
-      <ion-input type="number" (input)="altura = $event.target.value" placeholder="0.00"></ion-input>
-    </ion-item>
-    <ion-item>
-
-      <ion-label floating>
-        Digite seu peso
+        Digite seu peso:
       </ion-label>
       <ion-input type="number" (input)="peso = $event.target.value" placeholder="00.00"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>
+        Digite sua altura:
+      </ion-label>
+      <ion-input type="number" (input)="altura = $event.target.value" placeholder="00.00"></ion-input>
     </ion-item>
 
   </ion-list>
@@ -52,11 +54,11 @@
       </ion-card-header>
       <ion-card-content>
         <p>
-          <ion-icon margin="5px" name="md-send"></ion-icon>Situação: {{ condicao }}
+          <ion-icon margin="5px" name="md-thumbs-up"></ion-icon>Situação: {{ condicao }}
         </p>
         <br>
         <p>
-          <ion-icon margin="5px" name="md-thumbs-up"></ion-icon>IMC saudável fica entre 18,5 a 25.
+          <ion-icon margin="5px" name="md-send"></ion-icon>IMC saudável fica entre 18,5 a 25.
         </p>
       </ion-card-content>
     </ion-card>

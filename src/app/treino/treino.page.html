@@ -20,7 +20,7 @@
       </ion-card-header>
 
       <ion-tab-button (click)="Instrucoes()">
-        <ion-label class="ins">iNSTRUÇÕES</ion-label>
+        <ion-label class="ins">INSTRUÇÕES</ion-label>
       </ion-tab-button>
 
       <ion-tab-button (click)="Ciencia()">
@@ -33,13 +33,17 @@
 
   <ion-card class="baixo" (click)="Imc()">
     <ion-item>
-
-      <ion-icon name="speedometer" slot="start" class="nov"></ion-icon>
-      <ion-label class="mov">Avalie seu IMC</ion-label>
-
-
-      <ion-icon name="stats" slor="end" class="nov"></ion-icon>
-
+      <ion-row>
+        <ion-col>
+          <ion-icon name="speedometer" slot="start" class="nov"></ion-icon>
+        </ion-col>
+        <ion-col>
+          <ion-label class="mov">Calcular seu IMC</ion-label>
+        </ion-col>
+        <ion-col>
+          <ion-icon name="stats" slot="end" class="nov"></ion-icon>
+        </ion-col>
+      </ion-row>
     </ion-item>
   </ion-card>
 
@@ -47,19 +51,19 @@
 
     <ion-card-header class="fundo">
       <div class=container4>
-        <p>Treino de Corpo Inteiro</p>
-       
+        <p>Treino de corpo inteiro</p>
+
       </div>
-     
+
     </ion-card-header>
-    <li slot="start" >27 dias restantes </li>
-      <ion-progress-bar value="0.1"></ion-progress-bar>
+    <li slot="start">27 dias restantes </li>
+    <ion-progress-bar value="0.1"></ion-progress-bar>
   </ion-card>
 
   <ion-card (click)="AbdomensTreino()">
     <ion-card-header class="fundoA">
       <div class=container4>
-        <p>Abdomens Treino</p>
+        <p>Treino abdominal</p>
       </div>
     </ion-card-header>
   </ion-card>
@@ -67,7 +71,7 @@
   <ion-card (click)="BracoTreino()">
     <ion-card-header class="fundoB">
       <div class=container4>
-        <p>Braço Treino</p>
+        <p>Treino de braços</p>
       </div>
     </ion-card-header>
   </ion-card>
@@ -75,7 +79,7 @@
   <ion-card (click)="PernaTreino()">
     <ion-card-header class="fundoP">
       <div class=container4>
-        <p>Perna Treino</p>
+        <p>Treino de pernas</p>
       </div>
     </ion-card-header>
   </ion-card>
@@ -83,7 +87,7 @@
   <ion-card (click)="GluteosTreino()">
     <ion-card-header class="fundoG">
       <div class=container4>
-        <p>Gluteos Treino</p>
+        <p>Treino de glúteos</p>
       </div>
     </ion-card-header>
   </ion-card>
