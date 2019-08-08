@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar>
       <ion-icon (click)="Treino()" slot="start" name="arrow-back" class="volta"></ion-icon>
-    <ion-title>IMC</ion-title>
+    <ion-title>Índice de massa corporal:</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -22,14 +22,14 @@
       <ion-label floating>
         Digite seu peso:
       </ion-label>
-      <ion-input type="number" (input)="peso = $event.target.value" placeholder="00.00"></ion-input>
+      <ion-input type="number" (input)="peso = $event.target.value" placeholder="0.00"></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label floating>
         Digite sua altura:
       </ion-label>
-      <ion-input type="number" (input)="altura = $event.target.value" placeholder="00.00"></ion-input>
+      <ion-input type="number" (input)="altura = $event.target.value" placeholder="0.00"></ion-input>
     </ion-item>
 
   </ion-list>
@@ -50,7 +50,7 @@
   <div *ngIf="imc > 0">
     <ion-card>
       <ion-card-header>
-        IMC: {{ imc }}
+        Seu IMC é de: {{ imc }}
       </ion-card-header>
       <ion-card-content>
         <p>
@@ -58,7 +58,7 @@
         </p>
         <br>
         <p>
-          <ion-icon margin="5px" name="md-send"></ion-icon>IMC saudável fica entre 18,5 a 25.
+          <ion-icon margin="5px" name="md-send"></ion-icon>IMC saudável fica entre 18,5 e 25.
         </p>
       </ion-card-content>
     </ion-card>
